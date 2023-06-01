@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.scijava</groupId>
+    <artifactId>pom-scijava</artifactId>
+    <version>22.2.0</version>
+  </parent>
+  <groupId>fr.inserm.i2mc</groupId>
+  <artifactId>adipocorr_</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>adipocorr_</name>
+  <licenses>
+    <license>
+      <name>CC0 1.0 Universal License</name>
+      <url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>rfloresflores</id>
+      <name>Rémy Flores-Flores</name>
+      <roles>
+        <role>founder</role>
+        <role>lead</role>
+        <role>developer</role>
+        <role>debugger</role>
+        <role>reviewer</role>
+        <role>support</role>
+        <role>maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>plop</name>
+    </contributor>
+  </contributors>
+  <scm>
+    <connection>scm:git:git://github.com/scijava/pom-scijava/adipocorr_</connection>
+    <developerConnection>scm:git:git@github.com:scijava/pom-scijava/adipocorr_</developerConnection>
+    <tag>pom-scijava-22.2.0</tag>
+    <url>https://github.com/scijava/pom-scijava/adipocorr_</url>
+  </scm>
+  <mailingLists>
+    <mailingList>
+      <name>SciJava</name>
+      <subscribe>https://groups.google.com/group/scijava</subscribe>
+      <unsubscribe>https://groups.google.com/group/scijava</unsubscribe>
+      <post>scijava@googlegroups.com</post>
+      <archive>https://groups.google.com/group/scijava</archive>
+    </mailingList>
+  </mailingLists>
+  	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <license.licenseName>N/A</license.licenseName>
+    <license.copyrightOwners>N/A</license.copyrightOwners>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>net.imagej</groupId>
+    	<artifactId>ij</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.bytedeco</groupId>
+    	<artifactId>javacv-platform</artifactId>
+    	<version>1.4.1</version>
+    </dependency>
+  </dependencies>
+  <description>Adipocyte localization by multi-scale normalized cross-correlation</description>
+  <organization>
+  	<url>www.inserm.fr</url>
+  	<name>Inserm</name>
+  </organization>
+  <url>http://www.i2mc.inserm.fr</url>
+  <inceptionYear>2018</inceptionYear>
+  <issueManagement>
+  	<system>GitHub Issues</system>
+  </issueManagement>
+  <ciManagement>
+  	<system>None</system>
+  </ciManagement>
+</project>
